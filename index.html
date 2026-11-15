@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MXGE Vidcraft - استوديو المونتاج الذكي والموشن جرافيكس السينمائي المدعوم بنماذج الذكاء الاصطناعي وRemotion.">
-  <title>MXGE Vidcraft — استوديو المونتاج والموشن الذكي</title>
+  <meta name="description" content="MXGE Vidcraft - استوديو المونتاج والموشن جرافيكس الدلالي المدعوم بنماذج الذكاء الاصطناعي ومحرك Remotion.">
+  <title>MXGE Vidcraft — استوديو المونتاج والموشن</title>
   <link rel="icon" href="vidcraft.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,12 +13,12 @@
   <!-- Header -->
   <header class="shell">
     <a class="brand" href="./">
-      <img src="vidcraft.png" alt="MXGE Vidcraft Logo" width="38" height="38">
+      <img src="vidcraft.png" alt="MXGE Vidcraft" width="36" height="36">
       <span>MXGE Vidcraft</span>
     </a>
     <nav aria-label="أقسام الموقع">
-      <a href="#features">المميزات</a>
-      <a href="#how-it-works">كيف يعمل؟</a>
+      <a href="#features">الميزات</a>
+      <a href="#architecture">المعمارية</a>
       <a href="#downloads">التحميل</a>
       <a href="#faq">الأسئلة الشائعة</a>
     </nav>
@@ -30,37 +30,35 @@
       <div>
         <div class="badge-pill">
           <span></span>
-          إصدار v0.2.0 متاح الآن لنظامي Windows و Android
+          إصدار v0.2.0 لنظامي Windows و Android
         </div>
         <h1>
-          من فيديو خام إلى <br>
-          <span class="gradient-text">مونتاج وموشن سينمائي</span>
+          استوديو المونتاج والموشن <br>
+          <span class="gradient-text">المبني على الدلالة الصوتية</span>
         </h1>
         <p class="lead">
-          أضف مقطعك الخام وشاهد Vidcraft يحلل الكلام العربي محلياً بدقة الكلمة، ويقود المونتاج بمخرج ذكاء اصطناعي، ويركب موشن جرافيكس احترافي متزامن مع كل ثانية عبر Remotion.
+          نظام متكامل يحلل الكلام العربي محلياً بدقة التوقيت عبر Whisper، ويقود قرارات القص والمونتاج بنماذج الذكاء الاصطناعي، وينفذ حركات الموشن جرافيكس البرمجية بدقة الإطار عبر Remotion.
         </p>
         <div class="cta-group">
           <a class="btn btn-primary" href="#downloads">
-            <span>تحميل التطبيق الآن</span>
-            <span>↓</span>
+            تحميل الحزمة
           </a>
-          <a class="btn btn-secondary" href="#how-it-works">
-            <span>شاهد كيف يعمل</span>
-            <span>⚡</span>
+          <a class="btn btn-secondary" href="#architecture">
+            معمارية النظام
           </a>
         </div>
       </div>
 
-      <!-- App Mockup Preview -->
+      <!-- Technical Preview Mockup -->
       <div class="mockup-container" aria-hidden="true">
         <div class="mockup-header">
           <div class="dots">
             <span></span><span></span><span></span>
           </div>
-          <span>Vidcraft AI Studio • 1080×1920</span>
+          <span>Vidcraft Studio • 1080×1920 @ 30 FPS</span>
         </div>
         <div class="mockup-preview-screen">
-          <div class="mockup-tag">AI MOTION DIRECTOR #HEADLINE</div>
+          <div class="mockup-tag">EDITORIAL MASK REVEAL</div>
           <div>
             <div class="mockup-motion-box">
               « تضاعفت المبيعات بنسبة 300% »
@@ -74,61 +72,69 @@
     <!-- Features -->
     <section id="features" class="features-section">
       <div class="section-header">
-        <h2>أدوات مصممة لصنّاع المحتوى المحترفين</h2>
-        <p class="lead">لا حاجة لقضاء ساعات في تقطيع الوقفات وتصميم نصوص الموشن يدوياً.</p>
+        <h2>معايير العمل الاحترافي</h2>
+        <p class="lead">توليد قرارات تحريرية مبنية على السياق والدلالة، دون مؤثرات عشوائية.</p>
       </div>
 
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">🎙️</div>
-          <h3>تفريغ صوتي عربي بدقة DTW</h3>
-          <p>نموذج Whisper Medium محلي مدمج يستخرج التوقيت الزمني الدقيق لكل كلمة وجملة باللهجة المصرية والعربية الفصحى بدون رفع الصوت للإنترنت.</p>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+          </div>
+          <h3>تفريغ صوتي بدقة DTW</h3>
+          <p>تفريغ محلي بنموذج Whisper Medium دون اتصال بالإنترنت، مع محاذاة زمنية دقيقة لكل كلمة باللغة العربية واللهجات المحلية.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">🎬</div>
-          <h3>مخرج سينمائي بالذكاء الاصطناعي</h3>
-          <p>يفهم سياق الكلام، ويحذف الترددات والوقفات الميتة (Dead air)، ويختار أهم الجمل والأرقام ليبرزها بصرياً في التوقيت المناسب.</p>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+          </div>
+          <h3>إخراج تحريري ذكي</h3>
+          <p>حذف الوقفات والسكتات والترددات آلياً مع الحفاظ على ترابط الجمل، واستخراج الكلمات المفتاحية لتمثيلها بصرياً في التوقيت المناسب.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">✨</div>
-          <h3>موشن جرافيكس Remotion مخصص</h3>
-          <p>حركات نصوص برمجية (Mask reveals، أشرطة Focus للأرقام، واقتباسات سينمائية) بخط عربي IBM Plex متصل 100%.</p>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+          </div>
+          <h3>رندر موشن برمجي عبر Remotion</h3>
+          <p>حركات نصوص برمجية ومنحنيات حركة مدروسة مع خط عربي أصيل، متطابقة مع إطارات الصوت دون عشوائية القوالب الجاهزة.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon">📱</div>
-          <h3>تطبيق موبايل تفاعلي وسهل</h3>
-          <p>اختر الفيديو من هاتفك، وشاهد صورته المصغرة، وتابع مراحل المعالجة خطوة بخطوة حتى تحميل الـ MP4 النهائي.</p>
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2"/><line x1="12" x2="12.01" y1="18" y2="18"/></svg>
+          </div>
+          <h3>تطبيق أندرويد متكامل</h3>
+          <p>معاينة الفيديو الخام، وفحص حالة المحرك بضغطة واحدة، وتوجيه أسلوب المونتاج والمراجع وتنزيل النسخة المكتملة فوراً.</p>
         </div>
       </div>
     </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
+    <!-- Architecture Section -->
+    <section id="architecture" class="how-it-works">
       <div class="section-header">
-        <h2>كيف يعمل محرك الرندر والتطبيق؟</h2>
-        <p class="lead">تصميم ذكي يجمع بين راحة الموبايل وقوة معالجة الكمبيوتر.</p>
+        <h2>معمارية النظام وتوزيع الأدوار</h2>
+        <p class="lead">لماذا يعتمد التطبيق على معمارية العميل والخادم؟</p>
       </div>
 
       <div class="steps-container">
         <div class="step-card">
-          <span class="step-number">خطوة 1</span>
-          <h4>اختر الفيديو من هاتفك</h4>
-          <p>افتح تطبيق Vidcraft على هاتفك، واختر الفيديو الخام من الاستوديو، وأضف المراجع أو اللوجو واكتب تعليماتك للمونتير.</p>
+          <span class="step-number">01</span>
+          <h4>تطبيق الهاتف (العميل)</h4>
+          <p>واجهة خفيفة مصممة لاختيار الفيديو الخام ومعاينته، وإدخال توجيهات المونتاج والمراجع البصرية، والتحكم في إطلاق المهام.</p>
         </div>
 
         <div class="step-card">
-          <span class="step-number">خطوة 2</span>
-          <h4>المعالجة على محرك الرندر</h4>
-          <p>يرسل الهاتف البيانات إلى جهاز الكمبيوتر الخاص بك (أو سيرفرك السحابي)، حيث تتولى نماذج Whisper و Remotion و FFmpeg المعالجة الثقيلة.</p>
+          <span class="step-number">02</span>
+          <h4>محرك الرندر (الخادم)</h4>
+          <p>يعمل على الكمبيوتر أو السيرفر، ويتولى تشغيل نماذج الذكاء الاصطناعي الثقيلة: تفريغ Whisper، تحليل LLM، ومعالجة FFmpeg، ورندر Remotion.</p>
         </div>
 
         <div class="step-card">
-          <span class="step-number">خطوة 3</span>
-          <h4>استلم الفيديو النهائي فوراً</h4>
-          <p>يتم تصدير الفيديو الرأسي بدقة 1080×1920 وبمعدل 30 إطاراً، وتشغيله ومعاينته على الهاتف وحفظه بضغطة زر في المعرض.</p>
+          <span class="step-number">03</span>
+          <h4>التصدير النهائي</h4>
+          <p>ينتج الفيديو الرأسي النهائي بصيغة MP4 جاهزاً للنشر بدقة 1080×1920، ويتم تسليمه مباشرة للهاتف لتشغيله وحفظه.</p>
         </div>
       </div>
     </section>
@@ -136,44 +142,40 @@
     <!-- Downloads -->
     <section id="downloads" class="download-section">
       <div class="section-header">
-        <h2>تحميل حزمة Vidcraft</h2>
-        <p class="lead">اختر النسخة المناسبة لنظام التشغيل الخاص بك.</p>
+        <h2>تنزيل حزمة Vidcraft</h2>
+        <p class="lead">اختر الحزمة المتوافقة مع جهازك.</p>
       </div>
 
       <div class="platforms-grid">
-        <!-- Windows -->
         <article class="platform-card">
           <div>
             <div class="platform-header">
-              <h3><span>💻</span> Windows x64</h3>
-              <span class="tag-badge">النسخة المتكاملة + السيرفر</span>
+              <h3>Windows x64</h3>
+              <span class="tag-badge">المحرك + الواجهة</span>
             </div>
-            <p>يحتوي على الواجهة المكتبية الكاملة، ومحرك Whisper المدمج، ومحرك Remotion، وسيرفر الرندر للأندرويد، وخادم بروتوكول MCP للذكاء الاصطناعي.</p>
+            <p>يتضمن حزمة المحرك الكاملة، وتفريغ Whisper المحلي، ومحرك Remotion، وسيرفر معالجة مهام الهاتف، وخادم بروتوكول MCP للذكاء الاصطناعي.</p>
           </div>
           <div>
             <a class="btn btn-primary" href="https://github.com/mxge25/MXGE-Vidcraft-Downloads/releases/download/v0.1.0/MXGE-Vidcraft-Windows-x64.zip">
-              <span>تحميل نسخة Windows</span>
-              <span>↓</span>
+              تحميل نسخة Windows
             </a>
-            <p style="margin-top: 10px; font-size: 12px; color: var(--dim);">حزمة ZIP كاملة بدون تثبيت معقد</p>
+            <p style="margin-top: 10px; font-size: 12px; color: var(--dim);">حزمة مضغوطة ZIP للنظام المكتبي</p>
           </div>
         </article>
 
-        <!-- Android -->
         <article class="platform-card">
           <div>
             <div class="platform-header">
-              <h3><span>📱</span> Android APK</h3>
-              <span class="tag-badge">الإصدار v0.2.0 المحدث</span>
+              <h3>Android APK</h3>
+              <span class="tag-badge">v0.2.0 المحدث</span>
             </div>
-            <p>تطبيق أندرويد بواجهة Material عصرية، يدعم معاينة الفيديو، وفحص اتصال محرك الرندر بضغطة زر، وإضافة مراجع الموشن وشعار الشركة.</p>
+            <p>تطبيق أندرويد بواجهة احترافية تدعم معاينة الفيديو، واختبار اتصال المحرك، وإدارة مراجع الأسلوب، وتشغيل الفيديو النهائي.</p>
           </div>
           <div>
             <a class="btn btn-primary" href="MXGE-Vidcraft.apk" download>
-              <span>تحميل ملف APK المباشر</span>
-              <span>↓</span>
+              تحميل ملف APK
             </a>
-            <p style="margin-top: 10px; font-size: 12px; color: var(--dim);">Android 8.0 وأحدث · يتصل بمحرك الرندر</p>
+            <p style="margin-top: 10px; font-size: 12px; color: var(--dim);">Android 8.0 وأحدث • يتصل بمحرك الرندر</p>
           </div>
         </article>
       </div>
@@ -187,18 +189,13 @@
 
       <div class="faq-grid">
         <div class="faq-item">
-          <h4>ما هو «عنوان محرك الرندر» المطلوب في شاشة الهاتف؟</h4>
-          <p>الهواتف لا تستطيع تشغيل محركات الرندر الثقيلة مثل Remotion و Whisper بكفاءة. عنوان محرك الرندر هو عنوان IP الخاص بجهاز الكمبيوتر الذي تشغل عليه أمر <code>python android/render_host.py</code>، مثل: <code>http://192.168.1.15:8765</code>.</p>
+          <h4>لماذا يحتاج محرك الرندر إلى جهاز كمبيوتر ولا يعمل بالكامل على الهاتف؟</h4>
+          <p>رندر الموشن جرافيكس في Vidcraft ليس مجرد فلاتر جاهزة، بل يعتمد على محرك متصفح حقيقي (Chromium Headless) ينفذ كود React و Remotion فريماً بفرِيم، بالتوازي مع نموذج تفريغ صوتي ذكاء اصطناعي (Whisper Medium بوزن 1.5 جيجابايت). تشغيل هذه المنظومة على معالج الهاتف يستهلك البطارية والذاكرة بشكل غير عملي، بينما تشغيلها على خادم أو كمبيوتر يتيح إتمام الرندر بأقصى جودة وسرعة وتسليم النتيجة للهاتف.</p>
         </div>
 
         <div class="faq-item">
-          <h4>كيف أتأكد أن الهاتف متصل بمحرك الرندر؟</h4>
-          <p>في التحديث الجديد (v0.2.0)، وفرنا زر «فحص الاتصال ⚡» بجانب خانة العنوان. اضغط عليه، وسيظهر لك فوراً مؤشر أخضر إذا كان الاتصال ناجحاً.</p>
-        </div>
-
-        <div class="faq-item">
-          <h4>هل يدعم التطبيق الفيديوهات الطويلة؟</h4>
-          <p>التطبيق مخصص للفيديوهات الرأسية والقصيرة (Reels و TikTok و Shorts) حتى مدة 180 ثانية، لضمان أعلى جودة مونتاج وموشن جرافيكس سريع وسلس.</p>
+          <h4>كيف يتم ضبط عنوان المحرك في التطبيق؟</h4>
+          <p>شغّل أمر <code>python android/render_host.py --bind 0.0.0.0 --port 8765</code> على جهاز الكمبيوتر، ثم أدخل عنوان IP المحلي الظاهر في التيرمينال داخل التطبيق، واستخدم زر فحص الاتصال للتأكد من الجاهزية.</p>
         </div>
       </div>
     </section>
@@ -206,7 +203,7 @@
 
   <!-- Footer -->
   <footer class="shell">
-    <div>MXGE Vidcraft © 2026 — استوديو المونتاج الذكي</div>
+    <div>MXGE Vidcraft © 2026 — Semantic Motion Studio</div>
     <div>مدعوم بنماذج الذكاء الاصطناعي وتقنيات Remotion</div>
   </footer>
 
