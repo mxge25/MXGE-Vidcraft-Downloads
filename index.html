@@ -3,55 +3,212 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="حمّل MXGE Vidcraft لويندوز أو أندرويد. مونتاج وموشن جرافيك بإخراج يساعده الذكاء الاصطناعي.">
-  <title>MXGE Vidcraft — التحميل الرسمي</title>
+  <meta name="description" content="MXGE Vidcraft - استوديو المونتاج الذكي والموشن جرافيكس السينمائي المدعوم بنماذج الذكاء الاصطناعي وRemotion.">
+  <title>MXGE Vidcraft — استوديو المونتاج والموشن الذكي</title>
   <link rel="icon" href="vidcraft.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header -->
   <header class="shell">
-    <a class="brand" href="./"><img src="vidcraft.png" alt="" width="36" height="36"> <bdi>MXGE Vidcraft</bdi></a>
-    <nav aria-label="أقسام الصفحة"><a href="#downloads">التحميل</a><a href="#setup">التشغيل</a></nav>
+    <a class="brand" href="./">
+      <img src="vidcraft.png" alt="MXGE Vidcraft Logo" width="38" height="38">
+      <span>MXGE Vidcraft</span>
+    </a>
+    <nav aria-label="أقسام الموقع">
+      <a href="#features">المميزات</a>
+      <a href="#how-it-works">كيف يعمل؟</a>
+      <a href="#downloads">التحميل</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+    </nav>
   </header>
+
+  <!-- Hero Section -->
   <main class="shell">
-    <section class="hero" aria-labelledby="main-title">
+    <section class="hero">
       <div>
-        <p class="eyebrow">مونتاج وموشن جرافيك</p>
-        <h1 id="main-title">من فيديو خام<br>لمونتاج جاهز.</h1>
-        <p class="lead">أضف الفيديو، واكتب تعليماتك أو أرفق أمثلة للموشن. Vidcraft يحلّل الكلام ويجهّز القصّ والموشن وتصدير MP4.</p>
-        <a class="button" href="#downloads">اختار نسختك <span aria-hidden="true">↓</span></a>
+        <div class="badge-pill">
+          <span></span>
+          إصدار v0.2.0 متاح الآن لنظامي Windows و Android
+        </div>
+        <h1>
+          من فيديو خام إلى <br>
+          <span class="gradient-text">مونتاج وموشن سينمائي</span>
+        </h1>
+        <p class="lead">
+          أضف مقطعك الخام وشاهد Vidcraft يحلل الكلام العربي محلياً بدقة الكلمة، ويقود المونتاج بمخرج ذكاء اصطناعي، ويركب موشن جرافيكس احترافي متزامن مع كل ثانية عبر Remotion.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#downloads">
+            <span>تحميل التطبيق الآن</span>
+            <span>↓</span>
+          </a>
+          <a class="btn btn-secondary" href="#how-it-works">
+            <span>شاهد كيف يعمل</span>
+            <span>⚡</span>
+          </a>
+        </div>
       </div>
-      <div class="poster" aria-hidden="true"><img src="vidcraft.png" alt="" width="400" height="400"></div>
+
+      <!-- App Mockup Preview -->
+      <div class="mockup-container" aria-hidden="true">
+        <div class="mockup-header">
+          <div class="dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span>Vidcraft AI Studio • 1080×1920</span>
+        </div>
+        <div class="mockup-preview-screen">
+          <div class="mockup-tag">AI MOTION DIRECTOR #HEADLINE</div>
+          <div>
+            <div class="mockup-motion-box">
+              « تضاعفت المبيعات بنسبة 300% »
+            </div>
+            <div class="mockup-timeline-bar"></div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="downloads" aria-labelledby="download-title">
-      <div class="section-title"><h2 id="download-title">تحميل Vidcraft</h2><span class="version" dir="ltr">v0.1.0</span></div>
-      <div class="platforms">
-        <article>
-          <h3 dir="ltr">Windows</h3>
-          <p>واجهة المونتاج وكامل محرك الرندر المحلي. فيها إعدادات مزود الـAPI وخادم MCP لقراءة الخطط.</p>
-          <div class="platform-footer">
-            <a class="button" href="https://github.com/mxge25/MXGE-Vidcraft-Downloads/releases/download/v0.1.0/MXGE-Vidcraft-Windows-x64.zip">تحميل ويندوز <span aria-hidden="true">↓</span></a>
-            <small dir="ltr">ZIP · Windows x64</small>
+
+    <!-- Features -->
+    <section id="features" class="features-section">
+      <div class="section-header">
+        <h2>أدوات مصممة لصنّاع المحتوى المحترفين</h2>
+        <p class="lead">لا حاجة لقضاء ساعات في تقطيع الوقفات وتصميم نصوص الموشن يدوياً.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎙️</div>
+          <h3>تفريغ صوتي عربي بدقة DTW</h3>
+          <p>نموذج Whisper Medium محلي مدمج يستخرج التوقيت الزمني الدقيق لكل كلمة وجملة باللهجة المصرية والعربية الفصحى بدون رفع الصوت للإنترنت.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎬</div>
+          <h3>مخرج سينمائي بالذكاء الاصطناعي</h3>
+          <p>يفهم سياق الكلام، ويحذف الترددات والوقفات الميتة (Dead air)، ويختار أهم الجمل والأرقام ليبرزها بصرياً في التوقيت المناسب.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>موشن جرافيكس Remotion مخصص</h3>
+          <p>حركات نصوص برمجية (Mask reveals، أشرطة Focus للأرقام، واقتباسات سينمائية) بخط عربي IBM Plex متصل 100%.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>تطبيق موبايل تفاعلي وسهل</h3>
+          <p>اختر الفيديو من هاتفك، وشاهد صورته المصغرة، وتابع مراحل المعالجة خطوة بخطوة حتى تحميل الـ MP4 النهائي.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="section-header">
+        <h2>كيف يعمل محرك الرندر والتطبيق؟</h2>
+        <p class="lead">تصميم ذكي يجمع بين راحة الموبايل وقوة معالجة الكمبيوتر.</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step-card">
+          <span class="step-number">خطوة 1</span>
+          <h4>اختر الفيديو من هاتفك</h4>
+          <p>افتح تطبيق Vidcraft على هاتفك، واختر الفيديو الخام من الاستوديو، وأضف المراجع أو اللوجو واكتب تعليماتك للمونتير.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">خطوة 2</span>
+          <h4>المعالجة على محرك الرندر</h4>
+          <p>يرسل الهاتف البيانات إلى جهاز الكمبيوتر الخاص بك (أو سيرفرك السحابي)، حيث تتولى نماذج Whisper و Remotion و FFmpeg المعالجة الثقيلة.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">خطوة 3</span>
+          <h4>استلم الفيديو النهائي فوراً</h4>
+          <p>يتم تصدير الفيديو الرأسي بدقة 1080×1920 وبمعدل 30 إطاراً، وتشغيله ومعاينته على الهاتف وحفظه بضغطة زر في المعرض.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloads -->
+    <section id="downloads" class="download-section">
+      <div class="section-header">
+        <h2>تحميل حزمة Vidcraft</h2>
+        <p class="lead">اختر النسخة المناسبة لنظام التشغيل الخاص بك.</p>
+      </div>
+
+      <div class="platforms-grid">
+        <!-- Windows -->
+        <article class="platform-card">
+          <div>
+            <div class="platform-header">
+              <h3><span>💻</span> Windows x64</h3>
+              <span class="tag-badge">النسخة المتكاملة + السيرفر</span>
+            </div>
+            <p>يحتوي على الواجهة المكتبية الكاملة، ومحرك Whisper المدمج، ومحرك Remotion، وسيرفر الرندر للأندرويد، وخادم بروتوكول MCP للذكاء الاصطناعي.</p>
+          </div>
+          <div>
+            <a class="btn btn-primary" href="https://github.com/mxge25/MXGE-Vidcraft-Downloads/releases/download/v0.1.0/MXGE-Vidcraft-Windows-x64.zip">
+              <span>تحميل نسخة Windows</span>
+              <span>↓</span>
+            </a>
+            <p style="margin-top: 10px; font-size: 12px; color: var(--dim);">حزمة ZIP كاملة بدون تثبيت معقد</p>
           </div>
         </article>
-        <article>
-          <h3 dir="ltr">Android</h3>
-          <p>اختار الفيديو والمراجع من الموبايل واحفظ النتيجة MP4. تحتاج كود تفعيل لجهازك وعنوان محرك رندر شغّال.</p>
-          <div class="platform-footer">
-            <a class="button secondary" href="https://github.com/mxge25/MXGE-Vidcraft-Downloads/releases/download/v0.1.0/MXGE-Vidcraft.apk">تحميل أندرويد <span aria-hidden="true">↓</span></a>
-            <small dir="ltr">APK · Android 8+</small>
+
+        <!-- Android -->
+        <article class="platform-card">
+          <div>
+            <div class="platform-header">
+              <h3><span>📱</span> Android APK</h3>
+              <span class="tag-badge">الإصدار v0.2.0 المحدث</span>
+            </div>
+            <p>تطبيق أندرويد بواجهة Material عصرية، يدعم معاينة الفيديو، وفحص اتصال محرك الرندر بضغطة زر، وإضافة مراجع الموشن وشعار الشركة.</p>
+          </div>
+          <div>
+            <a class="btn btn-primary" href="MXGE-Vidcraft.apk" download>
+              <span>تحميل ملف APK المباشر</span>
+              <span>↓</span>
+            </a>
+            <p style="margin-top: 10px; font-size: 12px; color: var(--dim);">Android 8.0 وأحدث · يتصل بمحرك الرندر</p>
           </div>
         </article>
       </div>
     </section>
-    <section id="setup" class="setup" aria-labelledby="setup-title">
-      <h2 id="setup-title">أول تشغيل</h2>
-      <dl>
-        <div><dt>ويندوز</dt><dd>فك ضغط المجلد كاملًا، ثم شغّل <bdi>MXGE Vidcraft.exe</bdi>. للرندر استخدم Chrome أو Edge على نفس الجهاز. إعداد API مطلوب للتعليمات والمراجع.</dd></div>
-        <div><dt>أندرويد</dt><dd>ثبّت الـAPK، وانسخ معرّف جهازك واطلب كودًا من مسؤول التفعيل. بعد التفعيل، أدخل عنوان محرك الرندر اللي هتستخدمه.</dd></div>
-      </dl>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+      <div class="section-header">
+        <h2>الأسئلة الشائعة</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>ما هو «عنوان محرك الرندر» المطلوب في شاشة الهاتف؟</h4>
+          <p>الهواتف لا تستطيع تشغيل محركات الرندر الثقيلة مثل Remotion و Whisper بكفاءة. عنوان محرك الرندر هو عنوان IP الخاص بجهاز الكمبيوتر الذي تشغل عليه أمر <code>python android/render_host.py</code>، مثل: <code>http://192.168.1.15:8765</code>.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>كيف أتأكد أن الهاتف متصل بمحرك الرندر؟</h4>
+          <p>في التحديث الجديد (v0.2.0)، وفرنا زر «فحص الاتصال ⚡» بجانب خانة العنوان. اضغط عليه، وسيظهر لك فوراً مؤشر أخضر إذا كان الاتصال ناجحاً.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>هل يدعم التطبيق الفيديوهات الطويلة؟</h4>
+          <p>التطبيق مخصص للفيديوهات الرأسية والقصيرة (Reels و TikTok و Shorts) حتى مدة 180 ثانية، لضمان أعلى جودة مونتاج وموشن جرافيكس سريع وسلس.</p>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="shell"><bdi>MXGE Vidcraft</bdi><a href="https://github.com/mxge25/MXGE-Vidcraft-Downloads/releases">الإصدارات</a></footer>
+
+  <!-- Footer -->
+  <footer class="shell">
+    <div>MXGE Vidcraft © 2026 — استوديو المونتاج الذكي</div>
+    <div>مدعوم بنماذج الذكاء الاصطناعي وتقنيات Remotion</div>
+  </footer>
+
 </body>
 </html>
